@@ -49,7 +49,7 @@ class ProductServiceApplicationTests {
 				.statusCode(201)
 				.body("id", org.hamcrest.Matchers.notNullValue())
 				.body("name", org.hamcrest.Matchers.equalTo("Samsung S24"))
-				.body("description", org.hamcrest.Matchers.equalTo("SSamsung Flagship"))
+				.body("description", org.hamcrest.Matchers.equalTo("Samsung Flagship"))
 				.body("price", org.hamcrest.Matchers.equalTo(1024));
 	}
 
