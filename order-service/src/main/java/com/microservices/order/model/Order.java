@@ -20,4 +20,8 @@ public class Order {
     private String skuCode;
     private BigDecimal price;
     private Integer quantity;
+    //private String email;
+/*    public record UserDetails(String email, String firstName, String lastName) {}
+    @Embedded
+    private UserDetails userDetails;*/
 }
