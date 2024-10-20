@@ -1,0 +1,11 @@
+services:
+  mysql:
+    image: mysql:8.3.0
+    container_name: mysql_review_db
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: review_service_db
+    ports:
+      - "3326:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql

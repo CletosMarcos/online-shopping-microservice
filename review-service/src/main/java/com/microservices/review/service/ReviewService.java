@@ -37,7 +37,7 @@ public class ReviewService {
         return reviewRepository.findById(id).map(review -> {
             review.setRating(updatedReviewDTO.getRating());
             review.setComment(updatedReviewDTO.getComment());
-            review.setTimestamp(updatedReviewDTO.getTimestamp());
+//            review.setTimestamp(updatedReviewDTO.getTimestamp());
             Review savedReview = reviewRepository.save(review);
             return mapToDto(savedReview);
         }).orElseThrow(() -> new RuntimeException("Review not found"));
