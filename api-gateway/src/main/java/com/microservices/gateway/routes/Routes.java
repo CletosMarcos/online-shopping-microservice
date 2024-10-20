@@ -55,4 +55,18 @@ public class Routes {
                 .filter(setPath("/api-docs"))
                 .build();
     }
+
+    @Bean
+    public RouterFunction<ServerResponse> reviewServiceRoute() {
+        return GatewayRouterFunctions.route("review_service")
+                .route(RequestPredicates.path("/api/review"), HandlerFunctions.http("http://localhost:8084"))
+                .build();
+    }
+    @Bean
+    public RouterFunction<ServerResponse> reviewServiceSwaggerRoute() {
+        return GatewayRouterFunctions.route("review-service-swagger")
+                .route(RequestPredicates.path("/aggregate/review-service/v3/api-docs"), HandlerFunctions.http("http://localhost:8084"))
+                .filter(setPath("/api-docs"))
+                .build();
+    }
 }

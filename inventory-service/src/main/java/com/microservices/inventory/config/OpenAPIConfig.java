@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class OpenAPIConfig {
     @Bean
-    public OpenAPI productServiceAPI() {
+    public OpenAPI inventoryServiceAPI() {
         return new OpenAPI()
                 .info(new Info().title("Inventory Service API")
                         .description("This is the Rest API for Inventory Service")
