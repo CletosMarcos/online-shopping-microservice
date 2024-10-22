@@ -22,6 +22,10 @@ This project is the result of the need to assimilate concepts learned in the **"
 - **Keycloak**
 - **API Gateway using Spring Cloud Gateway MVC**
 
+## Application Architecture
+
+![img.jpg](..%2F..%2FVideos%2Fimg.jpg)
+
 ## Project Structure
 
 Each service is organized in a separate directory and each directory contains the service code, Maven build configurations, and a `Dockerfile` for containerization. Additionally, there is a `docker-compose.yml` file that defines how the containers are started and how they interact with each other.
