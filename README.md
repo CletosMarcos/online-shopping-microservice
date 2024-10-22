@@ -1,10 +1,8 @@
 # Spring Boot Shopping Microservice
-___
 
 This project is the result of the need to assimilate concepts learned in the **"Services, Microservices, and DevOps"** course. The application is simple, with no major validations as the goal with it is to grasp the concepts.
 
 ## Services Overview
-___
 
 - **Product Service**: Provides an API to create and view products.
 - **Order Service**: Handles product orders in the application.
@@ -14,7 +12,7 @@ ___
 - **API Gateway**: Manages and routes requests to the appropriate services, providing security.
 
 ## Tech Stack
-___
+
 The technologies used in this project are:
 
 - **Spring Boot**
