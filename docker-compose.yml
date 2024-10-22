@@ -67,8 +67,8 @@ services:
       - "8081:8081"
     depends_on:
       - order-mysql
-      - broker
-      - zookeeper
+      #- broker
+      #- zookeeper
       - kafka-ui
     networks:
       - microservices-net
@@ -178,7 +178,7 @@ services:
     networks:
       - microservices-net
     depends_on:
-      - keycloak-mysql
+      #- keycloak-mysql
       - keycloak
 #      - notification-service
 #      - order-service
