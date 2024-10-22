@@ -24,7 +24,8 @@ This project is the result of the need to assimilate concepts learned in the **"
 
 ## Application Architecture
 
-![img.jpg](..%2F..%2FVideos%2Fimg.jpg)
+![img](https://github.com/user-attachments/assets/2597a142-6869-4411-8581-a37e3f5c1171)
+
 
 ## Project Structure
 
