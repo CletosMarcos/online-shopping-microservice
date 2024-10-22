@@ -152,6 +152,21 @@ services:
 
   # ________________________________________________________
 
+
+# Notification Service
+
+  # Service Build
+  notification-service:
+    build:
+      context: ./notification-service
+    ports:
+      - "8083:8083"
+    networks:
+      - microservices-net
+
+
+  # ________________________________________________________
+
   # API-Gateway
 
   # Service Build
